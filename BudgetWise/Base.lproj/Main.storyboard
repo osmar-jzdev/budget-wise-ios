@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mZF-xK-fhV">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Expenses-->
+        <scene sceneID="lPF-mg-44m">
+            <objects>
+                <viewController id="TXo-bO-GCV" userLabel="Expenses" customClass="ExpensesViewController" customModule="BudgetWise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aZi-Ie-dET">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-ud-nGt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Gastos" id="siu-iC-q1z"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bsB-nR-SUS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HEV-ud-nGt" firstAttribute="top" secondItem="bsB-nR-SUS" secondAttribute="top" id="P53-Td-vbc"/>
+                            <constraint firstItem="HEV-ud-nGt" firstAttribute="leading" secondItem="bsB-nR-SUS" secondAttribute="leading" id="ecI-uu-tGX"/>
+                            <constraint firstItem="HEV-ud-nGt" firstAttribute="trailing" secondItem="bsB-nR-SUS" secondAttribute="trailing" id="ob8-W7-7pp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gastos" image="sym_expense" largeContentSizeImage="sym_expense" selectedImage="sym_expense" id="PEP-Ha-14L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Seb-5X-2ZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="-653"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="xPa-Le-GiI">
+            <objects>
+                <viewController id="XYx-uG-WMr" userLabel="Dashboard" customClass="DashboardViewController" customModule="BudgetWise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHj-1d-pR9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="homeBarTitle" translatesAutoresizingMaskIntoConstraints="NO" id="C4q-yv-xoh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Inicio" id="teM-D8-dY7"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YzI-t9-1iq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C4q-yv-xoh" firstAttribute="top" secondItem="YzI-t9-1iq" secondAttribute="top" id="T8u-BI-neM"/>
+                            <constraint firstItem="C4q-yv-xoh" firstAttribute="leading" secondItem="YzI-t9-1iq" secondAttribute="leading" id="YKx-5h-9Z7"/>
+                            <constraint firstItem="C4q-yv-xoh" firstAttribute="trailing" secondItem="YzI-t9-1iq" secondAttribute="trailing" id="eku-HP-yNM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="house.fill" catalog="system" largeContentSizeImage="house" selectedImage="house.fill" id="k4f-ZX-x4e"/>
+                    <connections>
+                        <outlet property="homeNavBarTitle" destination="C4q-yv-xoh" id="dKE-We-ZxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IcO-9F-rtv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-955.07246376811599" y="-69.293478260869577"/>
+        </scene>
+        <!--Incomes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Incomes" customClass="ViewController" customModule="BudgetWise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hum-YH-7vp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Ingresos" id="ehm-4q-VtM"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hum-YH-7vp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CGl-Fq-KiY"/>
+                            <constraint firstItem="Hum-YH-7vp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J11-HA-g9h"/>
+                            <constraint firstItem="Hum-YH-7vp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fRH-RN-Ti8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ingresos" image="sym_income" largeContentSizeImage="sym_income" selectedImage="sym_income" id="exl-dD-tcg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="517"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yCp-yx-u0v">
+            <objects>
+                <tabBarController id="mZF-xK-fhV" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jYE-b2-mjv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XYx-uG-WMr" kind="relationship" relationship="viewControllers" id="kVx-H6-YZ6"/>
+                        <segue destination="TXo-bO-GCV" kind="relationship" relationship="viewControllers" id="AJH-QC-IlN"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="W9a-ak-BvB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1S-O3-qQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="-69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="sym_expense" width="24" height="24"/>
+        <image name="sym_income" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

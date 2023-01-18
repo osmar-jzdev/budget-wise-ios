@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3703319296C8EEF000B37C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3703318296C8EEF000B37C4 /* AppDelegate.swift */; };
+		F370331B296C8EEF000B37C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370331A296C8EEF000B37C4 /* SceneDelegate.swift */; };
+		F370331D296C8EEF000B37C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370331C296C8EEF000B37C4 /* ViewController.swift */; };
+		F3703320296C8EEF000B37C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F370331E296C8EEF000B37C4 /* Main.storyboard */; };
+		F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */; };
+		F3703325296C8EF2000B37C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3703324296C8EF2000B37C4 /* Assets.xcassets */; };
+		F3703328296C8EF2000B37C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3703326296C8EF2000B37C4 /* LaunchScreen.storyboard */; };
+		F3A01C1B2973737300A5D104 /* IncomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A01C1A2973737300A5D104 /* IncomesViewController.swift */; };
+		F3A01C1E2973739300A5D104 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */; };
+		F3A01C202973739E00A5D104 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */; };
+		F3E5241329763F8E00150B21 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E5241229763F8E00150B21 /* Theme.swift */; };
+		F3E52415297640BF00150B21 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E52414297640BF00150B21 /* DashboardCard.swift */; };
+		F3E524172976415500150B21 /* DashboardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E524162976415500150B21 /* DashboardCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3703315296C8EEF000B37C4 /* BudgetWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3703318296C8EEF000B37C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F370331A296C8EEF000B37C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F370331C296C8EEF000B37C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F370331F296C8EEF000B37C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3703322296C8EEF000B37C4 /* BudgetWise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetWise.xcdatamodel; sourceTree = "<group>"; };
+		F3703324296C8EF2000B37C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3703327296C8EF2000B37C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3703329296C8EF2000B37C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A01C1A2973737300A5D104 /* IncomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesViewController.swift; sourceTree = "<group>"; };
+		F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F3E5241229763F8E00150B21 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F3E52414297640BF00150B21 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
+		F3E524162976415500150B21 /* DashboardCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3703312296C8EEF000B37C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F370330C296C8EEF000B37C4 = {
+			isa = PBXGroup;
+			children = (
+				F3703317296C8EEF000B37C4 /* BudgetWise */,
+				F3703316296C8EEF000B37C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3703316296C8EEF000B37C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3703315296C8EEF000B37C4 /* BudgetWise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3703317296C8EEF000B37C4 /* BudgetWise */ = {
+			isa = PBXGroup;
+			children = (
+				F3E5241129763F7200150B21 /* models */,
+				F3A01C19297372F100A5D104 /* controllers */,
+				F3A01C0C2973507300A5D104 /* view */,
+				F3703318296C8EEF000B37C4 /* AppDelegate.swift */,
+				F370331A296C8EEF000B37C4 /* SceneDelegate.swift */,
+				F370331C296C8EEF000B37C4 /* ViewController.swift */,
+				F370331E296C8EEF000B37C4 /* Main.storyboard */,
+				F3703324296C8EF2000B37C4 /* Assets.xcassets */,
+				F3703326296C8EF2000B37C4 /* LaunchScreen.storyboard */,
+				F3703329296C8EF2000B37C4 /* Info.plist */,
+				F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */,
+			);
+			path = BudgetWise;
+			sourceTree = "<group>";
+		};
+		F3A01C0C2973507300A5D104 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F3E524162976415500150B21 /* DashboardCardView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F3A01C19297372F100A5D104 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3A01C1A2973737300A5D104 /* IncomesViewController.swift */,
+				F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */,
+				F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F3E5241129763F7200150B21 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F3E5241229763F8E00150B21 /* Theme.swift */,
+				F3E52414297640BF00150B21 /* DashboardCard.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3703314296C8EEF000B37C4 /* BudgetWise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F370332C296C8EF2000B37C4 /* Build configuration list for PBXNativeTarget "BudgetWise" */;
+			buildPhases = (
+				F3703311296C8EEF000B37C4 /* Sources */,
+				F3703312296C8EEF000B37C4 /* Frameworks */,
+				F3703313296C8EEF000B37C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BudgetWise;
+			productName = BudgetWise;
+			productReference = F3703315296C8EEF000B37C4 /* BudgetWise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F370330D296C8EEF000B37C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F3703314296C8EEF000B37C4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F3703310296C8EEF000B37C4 /* Build configuration list for PBXProject "BudgetWise" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F370330C296C8EEF000B37C4;
+			productRefGroup = F3703316296C8EEF000B37C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3703314296C8EEF000B37C4 /* BudgetWise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3703313296C8EEF000B37C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3703328296C8EF2000B37C4 /* LaunchScreen.storyboard in Resources */,
+				F3703325296C8EF2000B37C4 /* Assets.xcassets in Resources */,
+				F3703320296C8EEF000B37C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3703311296C8EEF000B37C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A01C1B2973737300A5D104 /* IncomesViewController.swift in Sources */,
+				F3E524172976415500150B21 /* DashboardCardView.swift in Sources */,
+				F3E5241329763F8E00150B21 /* Theme.swift in Sources */,
+				F3A01C202973739E00A5D104 /* DashboardViewController.swift in Sources */,
+				F370331D296C8EEF000B37C4 /* ViewController.swift in Sources */,
+				F3703319296C8EEF000B37C4 /* AppDelegate.swift in Sources */,
+				F3E52415297640BF00150B21 /* DashboardCard.swift in Sources */,
+				F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */,
+				F370331B296C8EEF000B37C4 /* SceneDelegate.swift in Sources */,
+				F3A01C1E2973739300A5D104 /* ExpensesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F370331E296C8EEF000B37C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F370331F296C8EEF000B37C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3703326296C8EF2000B37C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3703327296C8EF2000B37C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F370332A296C8EF2000B37C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F370332B296C8EF2000B37C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F370332D296C8EF2000B37C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CR93AWFT86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetWise/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.osmardev.BudgetWise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F370332E296C8EF2000B37C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CR93AWFT86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetWise/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.osmardev.BudgetWise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3703310296C8EEF000B37C4 /* Build configuration list for PBXProject "BudgetWise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F370332A296C8EF2000B37C4 /* Debug */,
+				F370332B296C8EF2000B37C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F370332C296C8EF2000B37C4 /* Build configuration list for PBXNativeTarget "BudgetWise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F370332D296C8EF2000B37C4 /* Debug */,
+				F370332E296C8EF2000B37C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3703322296C8EEF000B37C4 /* BudgetWise.xcdatamodel */,
+			);
+			currentVersion = F3703322296C8EEF000B37C4 /* BudgetWise.xcdatamodel */;
+			path = BudgetWise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F370330D296C8EEF000B37C4 /* Project object */;
+}
