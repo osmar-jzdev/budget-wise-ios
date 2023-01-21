@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DashboardCardView: View {
-    let dashCard: DashboardCard
+    let dashCard: DashCardData
     var body: some View {
         VStack(alignment: .center) {
                     Text(dashCard.amountMoney)
@@ -54,7 +54,7 @@ struct DashboardCardView: View {
 }
 
 struct DashboardCardView_Previews: PreviewProvider {
-    static var dashCard = DashboardCard.sampleData[0]
+    static var dashCard = DashCardData.sampleData[0]
     static var previews: some View {
         DashboardCardView(dashCard: dashCard)
             .background(Color("BlueStrong"))

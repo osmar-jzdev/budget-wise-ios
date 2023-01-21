@@ -14,11 +14,14 @@
 		F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */; };
 		F3703325296C8EF2000B37C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3703324296C8EF2000B37C4 /* Assets.xcassets */; };
 		F3703328296C8EF2000B37C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3703326296C8EF2000B37C4 /* LaunchScreen.storyboard */; };
+		F392F60C297C9C300042C57A /* DashPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392F60B297C9C300042C57A /* DashPieSliceView.swift */; };
+		F392F60E297C9CBD0042C57A /* DashPieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392F60D297C9CBD0042C57A /* DashPieSliceData.swift */; };
+		F392F610297CAAF30042C57A /* DashPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392F60F297CAAF30042C57A /* DashPieChartView.swift */; };
 		F3A01C1B2973737300A5D104 /* IncomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A01C1A2973737300A5D104 /* IncomesViewController.swift */; };
 		F3A01C1E2973739300A5D104 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */; };
 		F3A01C202973739E00A5D104 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */; };
 		F3E5241329763F8E00150B21 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E5241229763F8E00150B21 /* Theme.swift */; };
-		F3E52415297640BF00150B21 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E52414297640BF00150B21 /* DashboardCard.swift */; };
+		F3E52415297640BF00150B21 /* DashCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E52414297640BF00150B21 /* DashCardData.swift */; };
 		F3E524172976415500150B21 /* DashboardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E524162976415500150B21 /* DashboardCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,11 +35,14 @@
 		F3703324296C8EF2000B37C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3703327296C8EF2000B37C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3703329296C8EF2000B37C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F392F60B297C9C300042C57A /* DashPieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashPieSliceView.swift; sourceTree = "<group>"; };
+		F392F60D297C9CBD0042C57A /* DashPieSliceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashPieSliceData.swift; sourceTree = "<group>"; };
+		F392F60F297CAAF30042C57A /* DashPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashPieChartView.swift; sourceTree = "<group>"; };
 		F3A01C1A2973737300A5D104 /* IncomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesViewController.swift; sourceTree = "<group>"; };
 		F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		F3E5241229763F8E00150B21 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		F3E52414297640BF00150B21 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
+		F3E52414297640BF00150B21 /* DashCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCardData.swift; sourceTree = "<group>"; };
 		F3E524162976415500150B21 /* DashboardCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E524162976415500150B21 /* DashboardCardView.swift */,
+				F392F60B297C9C300042C57A /* DashPieSliceView.swift */,
+				F392F60F297CAAF30042C57A /* DashPieChartView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -107,7 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				F3E5241229763F8E00150B21 /* Theme.swift */,
-				F3E52414297640BF00150B21 /* DashboardCard.swift */,
+				F3E52414297640BF00150B21 /* DashCardData.swift */,
+				F392F60D297C9CBD0042C57A /* DashPieSliceData.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -189,8 +198,11 @@
 				F3A01C202973739E00A5D104 /* DashboardViewController.swift in Sources */,
 				F370331D296C8EEF000B37C4 /* ViewController.swift in Sources */,
 				F3703319296C8EEF000B37C4 /* AppDelegate.swift in Sources */,
-				F3E52415297640BF00150B21 /* DashboardCard.swift in Sources */,
+				F392F60C297C9C300042C57A /* DashPieSliceView.swift in Sources */,
+				F3E52415297640BF00150B21 /* DashCardData.swift in Sources */,
+				F392F610297CAAF30042C57A /* DashPieChartView.swift in Sources */,
 				F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */,
+				F392F60E297C9CBD0042C57A /* DashPieSliceData.swift in Sources */,
 				F370331B296C8EEF000B37C4 /* SceneDelegate.swift in Sources */,
 				F3A01C1E2973739300A5D104 /* ExpensesViewController.swift in Sources */,
 			);

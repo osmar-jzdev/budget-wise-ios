@@ -62,6 +62,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Inicio" image="house.fill" catalog="system" largeContentSizeImage="house" selectedImage="house.fill" id="k4f-ZX-x4e"/>
                     <connections>
+                        <outlet property="homeNavBarBottom" destination="k4f-ZX-x4e" id="eaf-DL-Ehx"/>
                         <outlet property="homeNavBarTitle" destination="C4q-yv-xoh" id="dKE-We-ZxS"/>
                     </connections>
                 </viewController>

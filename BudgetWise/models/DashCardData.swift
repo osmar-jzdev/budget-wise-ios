@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DashboardCard {
+struct DashCardData {
     var amountMoney: String
     var txtAvailableMoney: String
     var txtIncome: String
@@ -15,9 +15,9 @@ struct DashboardCard {
     var theme: Theme
 }
 
-extension DashboardCard {
-    static let sampleData: [DashboardCard] =
+extension DashCardData {
+    static let sampleData: [DashCardData] =
     [
-        DashboardCard(amountMoney: "$10,000.00", txtAvailableMoney: "Dinero disponible", txtIncome: "Ingreso", txtExpense: "Gasto", theme: .yellow)
+        DashCardData(amountMoney: "$10,000.00", txtAvailableMoney: "Dinero disponible", txtIncome: "Ingreso", txtExpense: "Gasto", theme: .yellow)
     ]
 }
