@@ -15,43 +15,24 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCardView()
-        loadPieChart()
+        loadSwiftUIHomeDashboard()
     }
     
-    private func loadCardView() {
-        let swiftUICardView: some View = DashboardCardView(dashCard: DashCardData.sampleData[0])
-            .background(Color("BlueStrong"))
-            .cornerRadius(20)
-            .shadow(color: .gray, radius: 1, x: 0, y: 4)
+    private func loadSwiftUIHomeDashboard() {
+        let swiftUICardView: some View = DashboardSwiftUIView(dashCardData: DashCardData.sampleData[0], dashChartData: DashPieChartData(values: [1300, 500, 300], colors: [Color.blue, Color.green, Color.orange], backgroundColor:.white))
+        
         let hostingCardControllerCardView = UIHostingController(rootView: swiftUICardView)
         hostingCardControllerCardView.view.translatesAutoresizingMaskIntoConstraints = false
+        
+    
         self.view.addSubview(hostingCardControllerCardView.view)
         
-        let cardConstraints = [
-            hostingCardControllerCardView.view.topAnchor.constraint(equalTo: homeNavBarTitle.topAnchor, constant: 80),
-            hostingCardControllerCardView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            hostingCardControllerCardView.view.centerXAnchor.constraint(equalTo: homeNavBarTitle.centerXAnchor),
-            hostingCardControllerCardView.view.widthAnchor.constraint(equalToConstant: 350 ),
-            hostingCardControllerCardView.view.heightAnchor.constraint(equalToConstant: 220),
-        ]
-        self.view.addConstraints(cardConstraints)
-    }
-    
-    private func loadPieChart() {
-        let swiftUICardView: some View = DashPieChartView(values: [1300, 500, 300], colors: [Color.blue, Color.green, Color.orange], backgroundColor: Color(red: 21 / 255, green: 24 / 255, blue: 30 / 255, opacity: 1.0))
-        let hostingCardController = UIHostingController(rootView: swiftUICardView)
-        hostingCardController.view.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(hostingCardController.view)
-        
-        let cardConstraints = [
-            hostingCardController.view.topAnchor.constraint(equalTo: view.topAnchor, constant:385),
-            hostingCardController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            hostingCardController.view.centerXAnchor.constraint(equalTo: homeNavBarTitle.centerXAnchor),
-            hostingCardController.view.widthAnchor.constraint(equalToConstant: 350 ),
-            hostingCardController.view.heightAnchor.constraint(equalToConstant: 230),
-        ]
-        
-        self.view.addConstraints(cardConstraints)
+        NSLayoutConstraint.activate([
+            hostingCardControllerCardView.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+            hostingCardControllerCardView.view.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            hostingCardControllerCardView.view.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            hostingCardControllerCardView.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
+
     }
 }
