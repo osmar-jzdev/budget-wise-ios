@@ -47,7 +47,7 @@ struct DashCardView: View {
                                 .background(RoundedRectangle(cornerRadius: 50.0))
                                 .foregroundColor(Color("RedCustom"))
                                 .opacity(0.65)
-                                .fullScreenCover(isPresented: $showAddExpenseScreen, content: { AddIncomeScreenRepresentable() } )
+                                .fullScreenCover(isPresented: $showAddExpenseScreen, content: { AddExpenseScreenRepresentable() } )
                             Text(dashCard.txtExpense).font(.title3)
                                 .foregroundColor(Color("GrayCustom"))
                         }.padding(5)
