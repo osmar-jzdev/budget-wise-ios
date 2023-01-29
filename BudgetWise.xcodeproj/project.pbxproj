@@ -14,6 +14,8 @@
 		F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */; };
 		F3703325296C8EF2000B37C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3703324296C8EF2000B37C4 /* Assets.xcassets */; };
 		F3703328296C8EF2000B37C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3703326296C8EF2000B37C4 /* LaunchScreen.storyboard */; };
+		F3749DC52980E2FE00238D4E /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3749DC42980E2FE00238D4E /* AddExpenseViewController.swift */; };
+		F3749DC72980E30E00238D4E /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3749DC62980E30E00238D4E /* AddIncomeViewController.swift */; };
 		F392F60C297C9C300042C57A /* DashPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392F60B297C9C300042C57A /* DashPieSliceView.swift */; };
 		F392F60E297C9CBD0042C57A /* DashPieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392F60D297C9CBD0042C57A /* DashPieSliceData.swift */; };
 		F392F610297CAAF30042C57A /* DashPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392F60F297CAAF30042C57A /* DashPieChartView.swift */; };
@@ -37,6 +39,8 @@
 		F3703324296C8EF2000B37C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3703327296C8EF2000B37C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3703329296C8EF2000B37C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3749DC42980E2FE00238D4E /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		F3749DC62980E30E00238D4E /* AddIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
 		F392F60B297C9C300042C57A /* DashPieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashPieSliceView.swift; sourceTree = "<group>"; };
 		F392F60D297C9CBD0042C57A /* DashPieSliceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashPieSliceData.swift; sourceTree = "<group>"; };
 		F392F60F297CAAF30042C57A /* DashPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashPieChartView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				F3A01C1A2973737300A5D104 /* IncomesViewController.swift */,
 				F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */,
 				F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */,
+				F3749DC42980E2FE00238D4E /* AddExpenseViewController.swift */,
+				F3749DC62980E30E00238D4E /* AddIncomeViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -203,10 +209,12 @@
 				F3E5241329763F8E00150B21 /* Theme.swift in Sources */,
 				F3A01C202973739E00A5D104 /* DashboardViewController.swift in Sources */,
 				F370331D296C8EEF000B37C4 /* ViewController.swift in Sources */,
+				F3749DC72980E30E00238D4E /* AddIncomeViewController.swift in Sources */,
 				F3703319296C8EEF000B37C4 /* AppDelegate.swift in Sources */,
 				F392F60C297C9C300042C57A /* DashPieSliceView.swift in Sources */,
 				F3E52415297640BF00150B21 /* DashCardData.swift in Sources */,
 				F392F610297CAAF30042C57A /* DashPieChartView.swift in Sources */,
+				F3749DC52980E2FE00238D4E /* AddExpenseViewController.swift in Sources */,
 				F392F612297CC1390042C57A /* DashboardSwiftUIView.swift in Sources */,
 				F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */,
 				F392F614297CC4280042C57A /* DashPieChartData.swift in Sources */,
