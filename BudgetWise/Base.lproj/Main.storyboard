@@ -74,17 +74,14 @@
                                                 <color key="textColor" name="GrayCustom"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gasto" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="bfj-ld-MSk">
+                                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gasto" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bfj-ld-MSk">
                                                 <rect key="frame" x="0.0" y="24" width="374" height="52"/>
                                                 <color key="backgroundColor" red="0.94117647410000005" green="0.96470588450000005" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="eSk-tZ-niG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="expenseNameInput:" destination="0w3-pQ-4fm" eventType="editingDidEnd" id="QOk-8u-tZM"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -105,7 +102,7 @@
                                                 <color key="textColor" name="GrayCustom"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.0" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7p-Oe-Dvt">
+                                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.0" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7p-Oe-Dvt">
                                                 <rect key="frame" x="0.0" y="24" width="374" height="52"/>
                                                 <color key="backgroundColor" red="0.94117647410000005" green="0.96470588450000005" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,10 +110,7 @@
                                                     <constraint firstAttribute="height" constant="52" id="DL0-OB-Rco"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                <connections>
-                                                    <action selector="expenseValueInput:" destination="0w3-pQ-4fm" eventType="editingDidEnd" id="ZEv-V9-a9j"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -130,7 +124,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="58" id="M5a-7e-dHA"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.67058825489999996" green="0.79215681550000006" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" name="BlueMain"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Agregar" cornerStyle="large"/>
                                         <connections>
@@ -271,17 +265,14 @@
                                                 <color key="textColor" name="GrayCustom"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingreso" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="RGH-7r-UE6">
+                                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingreso" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RGH-7r-UE6">
                                                 <rect key="frame" x="0.0" y="24" width="374" height="52"/>
                                                 <color key="backgroundColor" red="0.94117647410000005" green="0.96470588450000005" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="muR-qF-jlg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="incomeNameInput:" destination="QHk-9S-TLf" eventType="editingDidEnd" id="sZ3-t6-8yd"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -302,7 +293,7 @@
                                                 <color key="textColor" name="GrayCustom"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.0" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPd-vQ-Kxr">
+                                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.0" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PPd-vQ-Kxr">
                                                 <rect key="frame" x="0.0" y="24" width="374" height="52"/>
                                                 <color key="backgroundColor" red="0.94117647410000005" green="0.96470588450000005" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,10 +301,7 @@
                                                     <constraint firstAttribute="height" constant="52" id="6La-ky-3rS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                <connections>
-                                                    <action selector="incomeValueInput:" destination="QHk-9S-TLf" eventType="editingDidEnd" id="RQD-iD-z25"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -327,7 +315,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="58" id="S6h-l9-x22"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.67058825489999996" green="0.79215681550000006" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" name="BlueMain"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Agregar" cornerStyle="large"/>
                                         <connections>
@@ -380,8 +368,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="XYx-uG-WMr" kind="relationship" relationship="viewControllers" id="kVx-H6-YZ6"/>
-                        <segue destination="TXo-bO-GCV" kind="relationship" relationship="viewControllers" id="AJH-QC-IlN"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="W9a-ak-BvB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1S-O3-qQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -395,6 +381,9 @@
         <image name="sym_expense" width="24" height="24"/>
         <image name="sym_income" width="24" height="24"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="BlueMain">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="GrayCustom">
             <color red="0.72899997234344482" green="0.76099997758865356" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

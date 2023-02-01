@@ -20,13 +20,6 @@ class AddExpenseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func expenseNameInput(_ sender: UITextField) {
-    }
-    
-    @IBAction func expenseValueInput(_ sender: UITextField) {
-    }
-    
     @IBAction func btnAddAction(_ sender: UIButton) {
     }
     

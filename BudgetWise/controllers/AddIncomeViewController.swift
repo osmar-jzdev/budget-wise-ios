@@ -19,11 +19,6 @@ class AddIncomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func incomeNameInput(_ sender: UITextField) {
-    }
-    
-    @IBAction func incomeValueInput(_ sender: UITextField) {
-    }
     @IBAction func btnAddAction(_ sender: UIButton) {
     }
     @IBAction func btnCloseAction(_ sender: UIBarButtonItem) {
