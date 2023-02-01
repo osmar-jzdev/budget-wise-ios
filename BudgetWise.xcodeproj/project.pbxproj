@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F330D7B9298A450F003B21E2 /* launcher_budget_app.png in Resources */ = {isa = PBXBuildFile; fileRef = F330D7B8298A450F003B21E2 /* launcher_budget_app.png */; };
 		F3703319296C8EEF000B37C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3703318296C8EEF000B37C4 /* AppDelegate.swift */; };
 		F370331B296C8EEF000B37C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370331A296C8EEF000B37C4 /* SceneDelegate.swift */; };
 		F370331D296C8EEF000B37C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370331C296C8EEF000B37C4 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F330D7B8298A450F003B21E2 /* launcher_budget_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launcher_budget_app.png; sourceTree = "<group>"; };
 		F3703315296C8EEF000B37C4 /* BudgetWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3703318296C8EEF000B37C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F370331A296C8EEF000B37C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				F370331C296C8EEF000B37C4 /* ViewController.swift */,
 				F370331E296C8EEF000B37C4 /* Main.storyboard */,
 				F3703324296C8EF2000B37C4 /* Assets.xcassets */,
+				F330D7B8298A450F003B21E2 /* launcher_budget_app.png */,
 				F3703326296C8EF2000B37C4 /* LaunchScreen.storyboard */,
 				F3703329296C8EF2000B37C4 /* Info.plist */,
 				F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */,
@@ -193,6 +196,7 @@
 			files = (
 				F3703328296C8EF2000B37C4 /* LaunchScreen.storyboard in Resources */,
 				F3703325296C8EF2000B37C4 /* Assets.xcassets in Resources */,
+				F330D7B9298A450F003B21E2 /* launcher_budget_app.png in Resources */,
 				F3703320296C8EEF000B37C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
