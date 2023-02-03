@@ -105,10 +105,7 @@
 		F3A01C0C2973507300A5D104 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				F3E524162976415500150B21 /* DashCardView.swift */,
-				F392F60B297C9C300042C57A /* DashPieSliceView.swift */,
-				F392F60F297CAAF30042C57A /* DashPieChartView.swift */,
-				F392F611297CC1390042C57A /* DashboardSwiftUIView.swift */,
+				F3E780D0298CD5E20061B389 /* dashboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -116,11 +113,9 @@
 		F3A01C19297372F100A5D104 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3A01C1A2973737300A5D104 /* IncomesViewController.swift */,
-				F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */,
-				F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */,
-				F3749DC42980E2FE00238D4E /* AddExpenseViewController.swift */,
-				F3749DC62980E30E00238D4E /* AddIncomeViewController.swift */,
+				F3E780CC298CD5590061B389 /* dashboard */,
+				F3E780CF298CD5750061B389 /* expenses */,
+				F3E780CE298CD56D0061B389 /* incomes */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -128,12 +123,57 @@
 		F3E5241129763F7200150B21 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				F3E780D1298CD61C0061B389 /* dashboard */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F3E780CC298CD5590061B389 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3A01C1F2973739E00A5D104 /* DashboardViewController.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		F3E780CE298CD56D0061B389 /* incomes */ = {
+			isa = PBXGroup;
+			children = (
+				F3A01C1A2973737300A5D104 /* IncomesViewController.swift */,
+				F3749DC62980E30E00238D4E /* AddIncomeViewController.swift */,
+			);
+			path = incomes;
+			sourceTree = "<group>";
+		};
+		F3E780CF298CD5750061B389 /* expenses */ = {
+			isa = PBXGroup;
+			children = (
+				F3A01C1D2973739300A5D104 /* ExpensesViewController.swift */,
+				F3749DC42980E2FE00238D4E /* AddExpenseViewController.swift */,
+			);
+			path = expenses;
+			sourceTree = "<group>";
+		};
+		F3E780D0298CD5E20061B389 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3E524162976415500150B21 /* DashCardView.swift */,
+				F392F60B297C9C300042C57A /* DashPieSliceView.swift */,
+				F392F60F297CAAF30042C57A /* DashPieChartView.swift */,
+				F392F611297CC1390042C57A /* DashboardSwiftUIView.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		F3E780D1298CD61C0061B389 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
 				F3E5241229763F8E00150B21 /* Theme.swift */,
 				F3E52414297640BF00150B21 /* DashCardData.swift */,
 				F392F60D297C9CBD0042C57A /* DashPieSliceData.swift */,
 				F392F613297CC4280042C57A /* DashPieChartData.swift */,
 			);
-			path = models;
+			path = dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
