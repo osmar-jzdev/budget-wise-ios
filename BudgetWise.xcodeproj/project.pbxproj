@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F32743AB29949AFD004CDFBF /* TransactionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32743A929949AFD004CDFBF /* TransactionEntity+CoreDataClass.swift */; };
+		F32743AC29949AFD004CDFBF /* TransactionEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32743AA29949AFD004CDFBF /* TransactionEntity+CoreDataProperties.swift */; };
+		F32743AF29949C4C004CDFBF /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32743AE29949C4C004CDFBF /* TransactionViewModel.swift */; };
 		F330D7B9298A450F003B21E2 /* launcher_budget_app.png in Resources */ = {isa = PBXBuildFile; fileRef = F330D7B8298A450F003B21E2 /* launcher_budget_app.png */; };
+		F348C29329935516009F92DF /* TransactionContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F348C29129935516009F92DF /* TransactionContainer.xcdatamodeld */; };
 		F3703319296C8EEF000B37C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3703318296C8EEF000B37C4 /* AppDelegate.swift */; };
 		F370331B296C8EEF000B37C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370331A296C8EEF000B37C4 /* SceneDelegate.swift */; };
 		F370331D296C8EEF000B37C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370331C296C8EEF000B37C4 /* ViewController.swift */; };
@@ -31,7 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F32743A929949AFD004CDFBF /* TransactionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F32743AA29949AFD004CDFBF /* TransactionEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F32743AE29949C4C004CDFBF /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		F330D7B8298A450F003B21E2 /* launcher_budget_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launcher_budget_app.png; sourceTree = "<group>"; };
+		F348C29229935516009F92DF /* TransactionContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionContainer.xcdatamodel; sourceTree = "<group>"; };
 		F3703315296C8EEF000B37C4 /* BudgetWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3703318296C8EEF000B37C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F370331A296C8EEF000B37C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F32743A829949A4C004CDFBF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F32743A929949AFD004CDFBF /* TransactionEntity+CoreDataClass.swift */,
+				F32743AA29949AFD004CDFBF /* TransactionEntity+CoreDataProperties.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		F32743AD29949C37004CDFBF /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F32743AE29949C4C004CDFBF /* TransactionViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		F370330C296C8EEF000B37C4 = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +111,8 @@
 		F3703317296C8EEF000B37C4 /* BudgetWise */ = {
 			isa = PBXGroup;
 			children = (
-				F3E5241129763F7200150B21 /* models */,
+				F32743AD29949C37004CDFBF /* viewmodel */,
+				F3E5241129763F7200150B21 /* model */,
 				F3A01C19297372F100A5D104 /* controllers */,
 				F3A01C0C2973507300A5D104 /* view */,
 				F3703318296C8EEF000B37C4 /* AppDelegate.swift */,
@@ -120,12 +146,14 @@
 			path = controllers;
 			sourceTree = "<group>";
 		};
-		F3E5241129763F7200150B21 /* models */ = {
+		F3E5241129763F7200150B21 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				F32743A829949A4C004CDFBF /* data */,
 				F3E780D1298CD61C0061B389 /* dashboard */,
+				F348C29129935516009F92DF /* TransactionContainer.xcdatamodeld */,
 			);
-			path = models;
+			path = model;
 			sourceTree = "<group>";
 		};
 		F3E780CC298CD5590061B389 /* dashboard */ = {
@@ -258,13 +286,17 @@
 				F392F60C297C9C300042C57A /* DashPieSliceView.swift in Sources */,
 				F3E52415297640BF00150B21 /* DashCardData.swift in Sources */,
 				F392F610297CAAF30042C57A /* DashPieChartView.swift in Sources */,
+				F32743AB29949AFD004CDFBF /* TransactionEntity+CoreDataClass.swift in Sources */,
 				F3749DC52980E2FE00238D4E /* AddExpenseViewController.swift in Sources */,
 				F392F612297CC1390042C57A /* DashboardSwiftUIView.swift in Sources */,
 				F3703323296C8EEF000B37C4 /* BudgetWise.xcdatamodeld in Sources */,
+				F348C29329935516009F92DF /* TransactionContainer.xcdatamodeld in Sources */,
 				F392F614297CC4280042C57A /* DashPieChartData.swift in Sources */,
 				F392F60E297C9CBD0042C57A /* DashPieSliceData.swift in Sources */,
 				F370331B296C8EEF000B37C4 /* SceneDelegate.swift in Sources */,
 				F3A01C1E2973739300A5D104 /* ExpensesViewController.swift in Sources */,
+				F32743AC29949AFD004CDFBF /* TransactionEntity+CoreDataProperties.swift in Sources */,
+				F32743AF29949C4C004CDFBF /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +516,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		F348C29129935516009F92DF /* TransactionContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F348C29229935516009F92DF /* TransactionContainer.xcdatamodel */,
+			);
+			currentVersion = F348C29229935516009F92DF /* TransactionContainer.xcdatamodel */;
+			path = TransactionContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		F3703321296C8EEF000B37C4 /* BudgetWise.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

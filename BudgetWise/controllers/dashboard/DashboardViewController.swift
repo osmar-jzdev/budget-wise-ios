@@ -12,6 +12,9 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet var homeNavBarTitle: UINavigationBar!
     @IBOutlet var homeNavBarBottom: UITabBarItem!
+    private var balance: Float = 0.0
+    private var totalIncomes: Float = 0.0
+    private var totalExpenses: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,7 @@ class DashboardViewController: UIViewController {
     }
     
     private func loadSwiftUIHomeDashboard() {
-        let swiftUICardView: some View = DashboardSwiftUIView(dashCardData: DashCardData.sampleData[0], dashChartData: DashPieChartData(values: [1300, 500, 300], colors: [Color.blue, Color.green, Color.orange], backgroundColor:.white))
+        let swiftUICardView: some View = DashboardSwiftUIView(dashCardData: DashCardData(amountMoney: "$\(balance)", txtAvailableMoney: "Dinero disponible", txtIncome: "Ingreso", txtExpense: "Gasto", theme: .yellow), dashChartData: DashPieChartData(values: [1300, 500, 300], colors: [Color.blue, Color.green, Color.orange], backgroundColor:.white))
         
         let hostingCardControllerCardView = UIHostingController(rootView: swiftUICardView)
         hostingCardControllerCardView.view.translatesAutoresizingMaskIntoConstraints = false
