@@ -12,23 +12,31 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet var homeNavBarTitle: UINavigationBar!
     @IBOutlet var homeNavBarBottom: UITabBarItem!
-    private var balance: Float = 0.0
-    private var totalIncomes: Float = 0.0
-    private var totalExpenses: Float = 0.0
+    private let context = (UIApplication.shared.delegate! as! AppDelegate).persistentContainer.viewContext
+    private var vm: TransactionViewModel?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        vm = TransactionViewModel(context: context)
+        vm?.fetch()
+        vm?.updateDashboardData()
         loadSwiftUIHomeDashboard()
     }
     
-    private func loadSwiftUIHomeDashboard() {
-        let swiftUICardView: some View = DashboardSwiftUIView(dashCardData: DashCardData(amountMoney: "$\(balance)", txtAvailableMoney: "Dinero disponible", txtIncome: "Ingreso", txtExpense: "Gasto", theme: .yellow), dashChartData: DashPieChartData(values: [1300, 500, 300], colors: [Color.blue, Color.green, Color.orange], backgroundColor:.white))
-        
-        let hostingCardControllerCardView = UIHostingController(rootView: swiftUICardView)
-        hostingCardControllerCardView.view.translatesAutoresizingMaskIntoConstraints = false
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        vm?.updateDashboardData()
+    }
     
+    private func loadSwiftUIHomeDashboard() {
+        //let dashData = DashboardData(txViewModel: vm!)
+        let swiftUICardView: some View = DashboardSwiftUIView()
+        let hostingCardControllerCardView = UIHostingController(rootView: swiftUICardView.environmentObject(vm!))
+        hostingCardControllerCardView.view.translatesAutoresizingMaskIntoConstraints = false
+        hostingCardControllerCardView.didMove(toParent: self)
         self.view.addSubview(hostingCardControllerCardView.view)
+        
         
         NSLayoutConstraint.activate([
             hostingCardControllerCardView.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
@@ -36,6 +44,5 @@ class DashboardViewController: UIViewController {
             hostingCardControllerCardView.view.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             hostingCardControllerCardView.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
-
     }
 }

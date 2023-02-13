@@ -8,24 +8,17 @@
 import SwiftUI
 
 struct DashboardSwiftUIView: View {
-    var dashCardData: DashCardData
-    var dashChartData: DashPieChartData
+    @EnvironmentObject var txViewModel: TransactionViewModel
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false, content: {
             VStack(spacing: 50) {
-                DashCardView(dashCard: dashCardData)
+                DashCardView(dashCard: DashCardData(amountMoney: "\(txViewModel.signedBalance)$\(txViewModel.balance)", txtAvailableMoney: "Dinero disponible", txtIncome: "Ingreso", txtExpense: "Gasto", theme: .yellow))
                     .background(Color("BlueStrong"))
                     .cornerRadius(20)
                     .shadow(color: .gray, radius: 1, x: 0, y: 4)
-                DashPieChartView(dashChartData: dashChartData)
+                DashPieChartView(dashChartData: DashPieChartData(values: [Double(txViewModel.incomes), Double(txViewModel.expenses)], colors: [Color("GreenCustom"), Color("RedCustom")], backgroundColor:.white))
             }
         })
-    }
-}
-
-struct DashboardSwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        DashboardSwiftUIView(dashCardData: DashCardData.sampleData[0], dashChartData: DashPieChartData(values: [1300, 500, 300], colors: [Color.blue, Color.green, Color.orange], backgroundColor: Color(red: 21 / 255, green: 24 / 255, blue: 30 / 255, opacity: 1.0)))
     }
 }

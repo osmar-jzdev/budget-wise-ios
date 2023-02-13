@@ -19,6 +19,7 @@ extension TransactionEntity {
     @NSManaged public var name: String?
     @NSManaged public var type: String?
     @NSManaged public var value: Float
+    @NSManaged public var id_transaction: UUID?
 
 }
 

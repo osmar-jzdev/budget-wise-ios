@@ -16,27 +16,26 @@ class AddIncomeViewController: UIViewController {
     @IBOutlet var lblErrorMessage: UITextView!
     private var incomeName: String!
     private var incomeValue: Float!
+    let context = (UIApplication.shared.delegate! as! AppDelegate).persistentContainer.viewContext
+    private var vm: TransactionViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lblErrorMessage.isHidden = true
+        vm = TransactionViewModel(context: context)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        vm?.updateDashboardData()
     }
     
     @IBAction func btnAddAction(_ sender: UIButton) {
-        if ((lblIncomeName.text?.isEmpty) != nil) && ((lblIncomeValue.text?.isEmpty) != nil) {
-            incomeName = lblIncomeName.text
-            incomeValue = (lblIncomeValue.text! as NSString).floatValue
-        }
+        validateEmptyData()
         
         if !incomeName.isEmpty && !incomeValue.isZero {
             lblErrorMessage.isHidden = true
-            let alertController = UIAlertController(title: "Agregado", message: "Ingreso guardado exitosamente", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Enterado", style: .default, handler: {_ in
-                self.dismiss(animated: true)
-            })
-            alertController.addAction(action)
-            self.present(alertController, animated: true)
-            
+            saveTransaction()
         } else {
             lblErrorMessage.isHidden = false
         }
@@ -44,5 +43,31 @@ class AddIncomeViewController: UIViewController {
     
     @IBAction func btnCloseAction(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
+    }
+    
+    private func validateEmptyData(){
+        if ((lblIncomeName.text?.isEmpty) != nil) && ((lblIncomeValue.text?.isEmpty) != nil) {
+            incomeName = lblIncomeName.text
+            incomeValue = (lblIncomeValue.text! as NSString).floatValue
+        }
+    }
+    
+    private func saveTransaction() {
+        if vm?.saveTransaction(tType: "income", tName: incomeName, tValue: incomeValue) == true {
+            let alertController = UIAlertController(title: "Agregado", message: "Ingreso guardado exitosamente", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Enterado", style: .default, handler: {_ in
+                self.dismiss(animated: true)
+            })
+            alertController.addAction(action)
+            self.present(alertController, animated: true)
+        } else {
+            let alertController = UIAlertController(title: "ERROR", message: "El ingreso no se pudo guardar", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Enterado", style: .default, handler: {_ in
+                self.dismiss(animated: true)
+            })
+            alertController.addAction(action)
+            self.present(alertController, animated: true)
+        }
+        
     }
 }
